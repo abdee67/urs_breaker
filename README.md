@@ -42,7 +42,14 @@ Whether you're planning a project, personal milestone, or just organizing tasks 
 5. (Optional) To run on a specific platform, specify the target, e.g.
    ```bash
    flutter run -d chrome   # for web  
-   flutter run -d android  # for Android  
+   flutter run -d android  # for Android
+   
+🚀 Usage Example
+  Very Simple...
+You’ll be greeted with a UI to enter a goal or objective.
 
+Submit the goal — the AI backend will break it down into sub-tasks or actionable steps.
+
+You can then review, edit, and refine the generated plan.
 
 
