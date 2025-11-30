@@ -4,7 +4,7 @@ import '../models/goal.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 class AIService {
-  static final String _apiKey = 'AIzaSyBRNG8o3cusnDgBiY8sIB0lm3jAuDUrG68';
+  static final String _apiKey = dotenv.env['GEMINI_API_KEY']!;
 
   late final GenerativeModel _model;
 
