@@ -1,55 +1,54 @@
-# urs_breaker 🚀
+# urs_breaker 🚀  
+**AI-Powered Goal Breaker — From Big Dream → Actionable Steps**
 
-**urs_breaker – AI-powered Goal Breaker**  
-You type a big goal. The AI breaks it down into manageable tasks — so you get from idea to action.
+<p align="center">
+  <img src="https://img.shields.io/badge/Flutter-3.x-blue?logo=flutter&logoColor=white" />
+  <img src="https://img.shields.io/badge/Dart-Language-blue?logo=dart&logoColor=white" />
+  <img src="https://img.shields.io/badge/AI-Gemini%202.5--Flash-orange?logo=google&logoColor=white" />
+  <img src="https://img.shields.io/badge/License-MIT-green" />
+  <img src="https://img.shields.io/badge/State%20Management-Provider-purple" />
+  <img src="https://img.shields.io/badge/UI-Shadcn%20UI-black" />
+  <img src="https://img.shields.io/badge/Platforms-Mobile%20%7C%20Web%20%7C%20Desktop-success" />
+</p>
 
-## ✨ What is this
+`urs_breaker` helps you take a large goal and instantly break it down into smaller, structured, and achievable steps using AI.  
+Built with **Flutter + Shadcn UI**, it provides a clean, modern, and intuitive experience across all platforms.
 
-`urs_breaker` is a Flutter-based application that uses AI to help you break down large goals into smaller, actionable steps.  
-Whether you're planning a project, personal milestone, or just organizing tasks — `urs_breaker` helps translate ambition into clarity.
+---
 
-## ✅ Why use it
+## ✨ What is this?
 
-- Turn vague big-picture goals into concrete, doable steps.  
-- Great for personal planning, project kickoffs, or brainstorming sessions.  
-- Built with Flutter — so it works across platforms (mobile, web, desktop).  
-- Designed to be extended: you can plug in different AI backends, customize UI/UX, and more.
+`urs_breaker` is a cross-platform AI assistant that converts big goals into step-by-step actionable tasks.  
+Whether you're planning a project, launching a startup, learning a skill, or organizing your life — this app simplifies everything.
+
+---
+
+## 🌟 Features
+
+- 🤖 **AI task breakdown** using *Gemini 2.5-Flash*
+- 🎨 **Modern UI** powered by **Shadcn UI**
+- 📱 **Runs anywhere** — Android, iOS, Web, Windows, macOS, Linux
+- ✏️ **Editable, customizable action steps**
+- ⚙️ **Clean architecture** with service layers
+- 🧠 **Provider state management**
+- 🚀 Fast, simple, and distraction-free workflow
+
+---
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: Flutter (Dart)  
-- **Platforms supported**: Android, iOS, Web, Windows, macOS, Linux (per repo folder structure)  
-- **AI / Logic**: (Add details — e.g. which AI model / service you use)  
-- **Other tools / dependencies**: (List any important packages, state management, etc.)
+- **Frontend:** Flutter (Dart)  
+- **UI Components:** Shadcn UI Flutter  
+- **AI Logic:** Gemini 2.5-Flash  
+- **State Management:** Provider  
+- **Platforms Supported:** Android, iOS, Web, Windows, macOS, Linux  
+- **Other Libraries:** Custom utility widgets, animations, reusable components
 
-## 🧑‍💻 Getting Started — Setup & Run Locally
+---
 
-1. Clone the repo  
-   ```bash
-   git clone https://github.com/abdee67/urs_breaker.git
-   cd urs_breaker
-2. Install dependencies  
-   ```bash
-   flutter pub get
-3. (If applicable) Generate any code / run build scripts — e.g.
-   ```bash
-   flutter pub run build_runner build --delete-conflicting-outputs
+## 🧑‍💻 Getting Started — Run Locally
 
-4. Launch the application
-   ```bash
-   flutter run
-
-5. (Optional) To run on a specific platform, specify the target, e.g.
-   ```bash
-   flutter run -d chrome   # for web  
-   flutter run -d android  # for Android
-   
-🚀 Usage Example
-  Very Simple...
-You’ll be greeted with a UI to enter a goal or objective.
-
-Submit the goal — the AI backend will break it down into sub-tasks or actionable steps.
-
-You can then review, edit, and refine the generated plan.
-
-
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/abdee67/urs_breaker.git
+cd urs_breaker
