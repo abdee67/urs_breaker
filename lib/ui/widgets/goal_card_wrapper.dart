@@ -91,7 +91,14 @@ class _GoalCardWrapperState extends ConsumerState<GoalCardWrapper> {
   Widget build(BuildContext context) {
     if (_isRefining) {
       return const Center(
-        child: SpinKitDancingSquare(color: Colors.white, size: 50),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SpinKitDancingSquare(color: Colors.white, size: 80),
+            SizedBox(height: 20),
+            Text('Refining...', style: TextStyle(color: Colors.white)),
+          ],
+        ),
       );
     }
 
