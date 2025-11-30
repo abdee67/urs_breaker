@@ -84,7 +84,13 @@ Return ONLY the JSON, no markdown formatting.
           return Task(
             milestoneId: 0, // Will be set when saved to DB
             description: t['description'] ?? '',
-            estimateHours: t['estimate_hours'],
+            estimateHours: t['estimate_hours'] != null
+                ? (t['estimate_hours'] is int
+                      ? t['estimate_hours']
+                      : (t['estimate_hours'] is String
+                            ? int.tryParse(t['estimate_hours'])
+                            : (t['estimate_hours'] as num).toInt()))
+                : null,
             priority: t['priority'],
           );
         }).toList();
@@ -114,7 +120,11 @@ Return ONLY the JSON, no markdown formatting.
 
       return Goal(
         title: goalTitle,
-        complexity: data['complexity'],
+        complexity: data['complexity'] is int
+            ? data['complexity']
+            : (data['complexity'] is String
+                  ? int.tryParse(data['complexity']) ?? 5
+                  : (data['complexity'] as num).toInt()),
         milestones: milestones,
         assumptions: assumptions,
         risks: risks,
@@ -169,7 +179,13 @@ Return ONLY the JSON, no markdown formatting.
           return Task(
             milestoneId: 0,
             description: t['description'] ?? '',
-            estimateHours: t['estimate_hours'],
+            estimateHours: t['estimate_hours'] != null
+                ? (t['estimate_hours'] is int
+                      ? t['estimate_hours']
+                      : (t['estimate_hours'] is String
+                            ? int.tryParse(t['estimate_hours'])
+                            : (t['estimate_hours'] as num).toInt()))
+                : null,
             priority: t['priority'],
           );
         }).toList();
@@ -199,7 +215,11 @@ Return ONLY the JSON, no markdown formatting.
       }).toList();
 
       return existingGoal.copyWith(
-        complexity: data['complexity'],
+        complexity: data['complexity'] is int
+            ? data['complexity']
+            : (data['complexity'] is String
+                  ? int.tryParse(data['complexity']) ?? existingGoal.complexity
+                  : (data['complexity'] as num).toInt()),
         milestones: milestones,
         assumptions: assumptions,
         risks: risks,

@@ -327,7 +327,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                       children: [
                         SpinKitDancingSquare(color: Colors.white, size: 80),
                         Text(
-                          "Loading...",
+                          "Breaking...",
                           style: TextStyle(color: Colors.white),
                         ),
                       ],
@@ -437,7 +437,17 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
               );
             },
             loading: () => const Center(
-              child: SpinKitDancingSquare(color: Colors.white, size: 50),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SpinKitDancingSquare(color: Colors.white, size: 80),
+                  SizedBox(height: 20),
+                  Text(
+                    'Loading goals...',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                ],
+              ),
             ),
             error: (err, stack) => Center(child: Text("Error: $err")),
           ),
