@@ -1,4 +1,4 @@
-# URS Breaker 🚀  
+# URS Breaker  
 **AI-Powered Goal Breaker — From Big Dream → Actionable Steps**
 
 <p align="center">
@@ -11,14 +11,14 @@
   <img src="https://img.shields.io/badge/Platforms-Mobile%20%7C%20Web%20%7C%20Desktop-success" />
 </p>
 
-`urs_breaker` helps you take a large goal and instantly break it into smaller, structured, and achievable tasks using AI.  
+`URS Breaker` helps you take a large goal and instantly break it into smaller, structured, and achievable tasks using AI.  
 Built with **Flutter + Shadcn UI**, it delivers a clean, intuitive, and modern cross-platform experience.
 
 ---
 
 ## ✨ What is this?
 
-`urs_breaker` is a cross-platform application that converts your big ideas into step-by-step actionable plans using **Gemini 2.5-Flash AI**.  
+`URS Breaker` is a cross-platform application that converts your big ideas into step-by-step actionable plans using **Gemini 2.5-Flash AI**.  
 Whether you're planning a business, learning a new skill, or organizing your personal goals — this app gives you a clear roadmap.
 
 ---
