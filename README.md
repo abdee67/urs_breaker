@@ -28,3 +28,21 @@ Whether you're planning a project, personal milestone, or just organizing tasks 
    ```bash
    git clone https://github.com/abdee67/urs_breaker.git
    cd urs_breaker
+2. Install dependencies  
+   ```bash
+   flutter pub get
+3. (If applicable) Generate any code / run build scripts — e.g.
+   ```bash
+   flutter pub run build_runner build --delete-conflicting-outputs
+
+4. Launch the application
+   ```bash
+   flutter run
+
+5. (Optional) To run on a specific platform, specify the target, e.g.
+   ```bash
+   flutter run -d chrome   # for web  
+   flutter run -d android  # for Android  
+
+
+
