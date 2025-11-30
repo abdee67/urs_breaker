@@ -12,8 +12,34 @@ class GoalCard extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(bottom: 16.0),
       child: ShadCard(
-        title: Text(goal.title, style: ShadTheme.of(context).textTheme.h4),
-        description: Text('Complexity: ${goal.complexity}/10'),
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Expanded(
+              child: Text(
+                goal.title,
+                style: ShadTheme.of(context).textTheme.h4,
+              ),
+            ),
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              decoration: BoxDecoration(
+                color: _getComplexityColor(goal.complexity),
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Text(
+                'Complexity: ${goal.complexity}/10',
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 12,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+          ],
+        ),
+        description:
+            const SizedBox.shrink(), // Description moved to title row for better layout
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -40,5 +66,11 @@ class GoalCard extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  Color _getComplexityColor(int score) {
+    if (score <= 3) return Colors.green;
+    if (score <= 6) return Colors.orange;
+    return Colors.red;
   }
 }
