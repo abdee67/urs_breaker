@@ -66,7 +66,7 @@ flutter pub run build_runner build --delete-conflicting-outputs
 
 ### 4️⃣ Set up environment variables
 ```bash
-Create a `.env` file in the root directory and add your Gemini API key:env
+Create a .env file in the root directory and add your Gemini API key:env
 GEMINI_API_KEY=your_gemini_api_key_here
 ```
 
@@ -138,13 +138,13 @@ urs_breaker/
 ### 🗺️ Roadmap
 ✔️ Current Features
 
-AI breakdown engine
+  AI breakdown engine
 
-Clean UI with Shadcn components
+  Clean UI with Shadcn components
 
-Multi-platform support
+  Multi-platform support
 
-Editable tasks
+  Editable tasks
 
 ---
 
