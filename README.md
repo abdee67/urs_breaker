@@ -1,4 +1,4 @@
-# urs_breaker 🚀  
+# URS Breaker 🚀  
 **AI-Powered Goal Breaker — From Big Dream → Actionable Steps**
 
 <p align="center">
@@ -165,9 +165,9 @@ Contributions are welcome! Please read our [contributing guidelines](CONTRIBUTIN
 ---
 
 ### 📝 Contact
-GitHub: https://github.com/abdee67
-Project Repo: https://github.com/abdee67/urs_breaker
-Email: [alaziizz67@gmail.com](mailto:alaziizz67@gmail.com)
+- GitHub: https://github.com/abdee67
+- Project Repo: https://github.com/abdee67/urs_breaker
+- Email: [alaziizz67@gmail.com](mailto:alaziizz67@gmail.com)
 
 ---
 
